@@ -1145,10 +1145,10 @@ function AnswerIncorrect()
     {
         score -= 5;
     }
-    //otherwise, also detract a life
+    //otherwise, detract a life
     else
     {   
-        score -= 5;
+        
         lives --;
     }
     console.log(`Incorrect!`);
@@ -1163,10 +1163,10 @@ function AnswerInvalid()
     {
         score -= 5;
     }
-    //otherwise, also detract a life
+    //otherwise, detract a life
     else
     {   
-        score -= 5;
+        
         lives --;
     }
     console.log(`Invalid input!`);
@@ -1233,7 +1233,7 @@ function GetSecondNum()
 //checks to make sure its not asking the user to divide by 0
 function CheckDivideZero()
 {
-    if(operatorIndex === 3)
+    if(operatorIndex === 4)
     {
         while(secondNum === 0)
         {
